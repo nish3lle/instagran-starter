@@ -3,57 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
-
+    <title>Instagram Clone</title>
     <style>
-    
-      
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        nav {
+            display: inline-block;
+            width: 100%;
+            height: 54px;
+            background-color: white;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        #logo {
+            height: 40px;
+        }
+
+        input[type="text"] {
+            height: 25px;
+            width: 30vw;
+            background-color: #fafafa;
+            border: 1px solid #b5b5b5;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        #actions {
+            height: 40px;
+        }
+
+        #stories {
+            height: 90px;
+            width: 70vw;
+            margin-top: -5px auto;
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user {
+            width: 18%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .user img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px double #b5b5b5;
+            margin-top: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .userstory {
+            text-align: center;
+            margin: 0;
+            font-family: "Lucida Sans Unicode";
+            font-weight: 100;
+            font-size: smaller;
+        }
+
+        .post {
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            height: 60vh;
+            width: 560px;
+            margin: 10px auto;
+        }
+
+        .post-header {
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            padding: 5px;
+            border-bottom: 1px solid #b5b5b5;
+            display: flex;
+            align-items: center;
+        }
+
+        .post-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post-image {
+            width: 100%;
+            height: calc(100% - 50px);
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <nav>
-       
-        <img id="logo" src="img/instagran.png" alt="instagran logo" >
-    
-        <input type="text" placeholder="search"/>
-
-        <img id="actions" src="img/actions.png" alt="actions" >
+        <img id="logo" src="img/instagran.png" alt="instagran logo">
+        <input type="text" placeholder="search">
+        <img id="actions" src="img/actions.png" alt="actions">
     </nav>
 
     <section id="stories">
-        <div class="user" id="mydiv">
-            <img src="img/gran1.jpg" >
+        <div class="user">
+            <img src="img/gran1.jpg" alt="Elma">
             <p class="userstory">Elma</p>
         </div>
         <div class="user">
-            <img src="img/gran2.jpg" >
+            <img src="img/gran2.jpg" alt="Betty">
             <p class="userstory">Betty</p>
         </div>
         <div class="user">
-            <img src="img/gran3.jpg" >
+            <img src="img/gran3.jpg" alt="Sandra">
             <p class="userstory">Sandra</p>
         </div>
         <div class="user">
-            <img src="img/gran4.jpg" >
+            <img src="img/gran4.jpg" alt="Delores">
             <p class="userstory">Delores</p>
         </div>
-
         <div class="user">
-            <img src="img/gran5.jpg" >
+            <img src="img/gran5.jpg" alt="Karen">
             <p class="userstory">Karen</p>
         </div>
     </section>
 
     <section class="post">
         <div class="post-header">
-            <img src="img/gran1.jpg"><span>Elma</span>
+            <img src="img/gran1.jpg" alt="Elma">
+            <span>Elma</span>
         </div>
         <div>
-            <img class="post-image" src="https://www.placecage.com/g/512/512" alt="cage image">
+            <img class="post-image" src="https://cosmicbook.news/wp-content/uploads/2023/04/nicolas-cage-superman-rumored-for-the-flash.jpg" alt="cage image">
         </div>
     </section>
-
-    <footer></footer>
 </body>
 </html>
